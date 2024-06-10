@@ -2,10 +2,12 @@
 
 #ifdef _WIN64
     const char* set = "cls";
+    const char* set2 = "pause";
 #elif __linux__
-    const char* set = "clear"
+    const char* set = "clear";
+    const char* set2 = "read";
 #else
-    set = "error";
+    const char* set = "error";
 #endif
 
 int main ()
@@ -15,7 +17,10 @@ int main ()
 
          do
          {
-                system(set);
+                #ifdef __linux__
+                    std::cout << "linux" << std::endl;
+                #endif
+                [[nodiscard]]system(set);
                 std::cout << "CALCULADORA EXTREMAMENTE SIMPLES PARA UTILIZAR (X+Y) \nPARA SAIR DO PROGRAMA APERTE [S]\n>>>";
                 std::cin >> calc;
                 if(toupper(calc[0]) == 'S')
@@ -31,9 +36,11 @@ int main ()
                     break;
                 }
          std::cout << ">>>" << calculo() << std::endl;
-         (void)getch();
-         system(set);
-    }
+         
+         [[nodiscard]]system(set2);
+
+         [[nodiscard]]system(set);
+   }
     return 0;
 }
 

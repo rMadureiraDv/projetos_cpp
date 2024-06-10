@@ -3,4 +3,4 @@
 all : calculadora
 
 calculadora : Calculadora.cpp header.hpp
-	g++ ./Calculadora.cpp ./header.hpp -o calculadora
+	g++ -std=c++20 -O3 ./Calculadora.cpp ./header.hpp -o calculadora

@@ -4,6 +4,15 @@
 Um projeto simples para calculadora
 
 ### MODO DE USAR
+ANTES DE USAR O PROGRAMA VÁ NOS ARQUIVOS DO CÓDIGO, ABRA O TERMINAL E DIGITE ```make```
+CASO NÃO TENHA MAKEFILE VÁ NAS PASTAS ESPECIFICAS
+OBS : usuários de linux , usem o makefile
+```
+--NO TEMINAL
+
+make
+```
+
 ```
 --NO TERMINAL
 
