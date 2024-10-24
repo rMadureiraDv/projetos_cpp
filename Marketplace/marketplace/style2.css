@@ -1,0 +1,37 @@
+h1
+{
+    text-align: center;
+}
+body
+{
+    background: #e1dcdc;
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p
+{
+    max-width: 500px;
+    width: auto;
+    height: auto;
+}
+footer
+{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #888686;
+    color: white;
+    text-align: center;
+}
+
+footer a
+{
+    position: relative;
+    top: 7px;
+}
+footer a:hover
+{
+    border-color: #000000;
+}
